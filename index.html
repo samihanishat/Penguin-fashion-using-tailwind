@@ -11,6 +11,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
         .font-bebas-neue {
             font-family: "Bebas Neue", sans-serif;
@@ -19,12 +23,30 @@
         .font-roboto {
             font-family: "Roboto", sans-serif;
         }
+
+        .font-montserrat {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 </head>
 
 <body class="font-roboto">
     <header class="bg-[#FFFBF0] p-4">
-        <nav></nav>
+        <nav class="flex justify-between max-w-7xl mx-auto p-3">
+            <div>
+                <h2 class="font-bold text-2xl font-montserrat"> <span class="text-[#A4BC46]">Penguin</span> <span
+                        class="text-[#363958]">Fashion</span></h2>
+            </div>
+            <div class="flex gap-4">
+                <p>Home</p>
+                <p>Product</p>
+                <p>About us</p>
+                <p>Contact us</p>
+            </div>
+        </nav>
         <!-- banner start -->
         <div class="md:flex items-center justify-around">
             <div>
@@ -52,7 +74,7 @@
     <main class="max-w-7xl mx-auto">
         <!-- Woman jacket section -->
         <section class="my-12">
-            <h3 class="text-5xl uppercase text-[#363958] font-bebas-neue">Woman Jacket</h3>
+            <h3 class="text-5xl uppercase text-[#363958] font-bebas-neue mb-5">Woman Jacket</h3>
             <!-- Jacket card container -->
             <div class="grid grid-cols-1 gap-7 lg:grid-cols-3">
                 <!-- jacket card -->
@@ -113,10 +135,10 @@
             </div>
         </section>
         <section class="my-12">
-            <h3 class="text-5xl uppercase text-[#363958] font-bebas-neue">Man Jacket</h3>
+            <h3 class="text-5xl uppercase text-[#363958] font-bebas-neue mb-5">Man Jacket</h3>
             <!-- Jacket card container -->
             <!-- Man Jacket -->
-             <div class="grid grid-cols-1 gap-7 lg:grid-cols-3">
+            <div class="grid grid-cols-1 gap-7 lg:grid-cols-3">
                 <div class="space-y-4 p-5 rounded-3xl bg-[#FFFFFF] drop-shadow-lg">
                     <img class="p-5 bg-[#F1F1F1] rounded-3xl" src="images/jacket-4.png" alt="">
                     <h4 class="text-2xl text-[#363958] font-bold">Snowboard Jacket Mens</h4>
@@ -171,10 +193,40 @@
                             BUY NOW</button>
                     </div>
                 </div>
-             </div>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="flex items-center justify-center gap-16 my-16 max-w-7xl mx-auto">
+        <div>
+            <div class="my-4">
+                <div></div>
+                <div class="drop-shadow-lg bg-[#FFFFFF] rounded-2xl p-7">
+                    <h4 class="font-bold text-2xl">Find the Perfect Fit</h4>
+                    <p>Everybody is different, which is why we
+                        offer styles for every body.</p>
+                </div>
+            </div>
+            <div class="my-4">
+                <div></div>
+                <div class="drop-shadow-lg bg-[#FFFFFF] rounded-2xl p-7">
+                    <h4 class="font-bold text-2xl">Free Exchanges</h4>
+                    <p>One of the many reasons you can shop
+                        with peace of mind.</p>
+                </div>
+            </div>
+            <div>
+                <div></div>
+                <div class="drop-shadow-lg bg-[#FFFFFF] rounded-2xl p-7">
+                    <h4 class="font-bold text-2xl">Contact Our Seller</h4>
+                    <p>They are here to help you. That's quite
+                        literally what we pay them for.</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2">
+            <img src="images/shopping.png" alt="">
+        </div>
+    </footer>
 </body>
 
 </html>
